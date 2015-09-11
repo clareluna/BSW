@@ -5,29 +5,38 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foundation</title>
-    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/foundation.css" />
   </head>
 
   <body>
-    <nav>
-      <div>
-        <a href="index.html" class="logo"></a>
-      </div>
-      <div>
-        <h2>Kalispell, MT</h2>
-      </div>
-      <ul>
-        <li>Home</li>
-        <li>Event</li>
-        <li>About</li>
-        <li>Contact</li>
-        <li>Register</li>
+    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#">BIG SKY WEEKEND</a></h1>
+        </li>
+        <li class="toggle-topbar"><a href="#"><span>Menu</span></a></li>
       </ul>
-    </nav>
+    <section class="top-bar-section">
+    <ul class="right">
+      <li class="has-dropdown">
+        <a href="#">Event</a>
+        <ul class="dropdown">
+          <li><a href="#">Schedule</a></li>
+          <li><a href="#">Instructors</a></li>
+          <li><a href="#">Music/Venues</a></li>
+        </ul>
+      </li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li class="active"><a href="#">Register</a></li>
+    </ul>
+  </section>
+</nav>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="js/foundation/foundation.js"></script>
-    <script src="js/foundation/foundation.interchange.js"></script>
+    <script src="js/foundation.js"></script>
+    <script src="js/foundation.interchange.js"></script>
+    <script src="js/app.js"></script>
   </body>
 
 </html>
