@@ -1147,7 +1147,7 @@ select {
     position: relative;
     right: 91.66667%;
     left: auto; } }
-button, .button {
+/*button, .button {
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: 0;
@@ -1316,7 +1316,7 @@ button, .button {
 
 button::-moz-focus-inner {
   border: 0;
-  padding: 0; }
+  padding: 0; }*/
 
 @media only screen and (min-width: 40.0625em) {
   button, .button {
