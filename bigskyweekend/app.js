@@ -1,14 +1,16 @@
-var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
+var express      = require('express');
+var path         = require('path');
+var favicon      = require('serve-favicon');
+var logger       = require('morgan');
 var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
+var bodyParser   = require('body-parser');
 
-var routes = require('./routes/index');
-var users = require('./routes/users');
+var routes       = require('./routes/index');
+var users        = require('./routes/users');
 
-var app = express();
+var posts        = require('./mock/posts.json');
+
+var app          = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -45,6 +47,15 @@ if (app.get('env') === 'development') {
     });
   });
 }
+
+// API
+app.get('/posts', function(req, res) {
+  if (req.query.raw) {
+    res.json(posts);
+  } else {
+    res.json(postsLists);
+  }
+})
 
 // production error handler
 // no stacktraces leaked to user
