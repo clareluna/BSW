@@ -9,19 +9,7 @@ var gulp = require('gulp'),
 		 del = require('del');
 
 gulp.task('concatJS', function() {
-	return gulp.src(['public/js/jquery.cookie.js',
-						'public/js/foundation.js',
-						'public/js/foundation.abide.js',
-						'public/js/foundation.accordion.js',
-						'public/js/foundation.clearing.js',
-						'public/js/foundation.dropdown.js',
-						'public/js/foundation.interchange.js',
-						'public/js/foundation.joyride.js',
-						'public/js/foundation.offcanvas.js',
-						'public/js/foundation.reveal.js',
-						'public/js/foundation.slider.js',
-						'public/js/foundation.topbar.js',
-						'public/js/slider.js'])
+	return gulp.src(['app.js'])
 		.pipe(concat('app.js'))
 		.pipe(gulp.dest('public/js'));
 });
