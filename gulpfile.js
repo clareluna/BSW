@@ -20,7 +20,8 @@ gulp.task('concatJS', function() {
 						'public/js/foundation.offcanvas.js',
 						'public/js/foundation.reveal.js',
 						'public/js/foundation.slider.js',
-						'public/js/foundation.topbar.js',])
+						'public/js/foundation.topbar.js',
+						'public/js/slider.js'])
 		.pipe(concat('app.js'))
 		.pipe(gulp.dest('public/js'));
 });
