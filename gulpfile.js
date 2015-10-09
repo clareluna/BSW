@@ -35,7 +35,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('clean', function() {
-	del(['dist', 'public/css/*.css', 'public/js/*.js', 'public/img/Kittinder.svg']);
+	del(['dist', 'public/css/*.css', 'public/js/*.js', 'public/img']);
 });
 
 gulp.task('build', ['minifyJS', 'compileSass'], function() {

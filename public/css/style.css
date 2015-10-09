@@ -1,17 +1,20 @@
 nav {
   z-index: 100;
   background-color: #F3F3F3;
-  padding-top: 0 ul;
-    padding-top-margin: 0;
-    padding-top-padding: 0 li;
-      padding-top-padding-float: right;
-      padding-top-padding-list-style-type: none;
-      padding-top-padding-display: inline-block;
-      padding-top-padding-padding: 15px;
-      padding-top-padding-text-decoration: none;
-      padding-top-padding-color: black;
-      padding-top-padding-border-left: 1px solid #8d8d8d nav;
-        padding-top-padding-border-left-background-color: white; }
+  padding-top: 0; }
+  nav ul {
+    margin: 0;
+    padding: 0; }
+    nav ul li {
+      list-style-type: none;
+      display: block;
+      text-decoration: none;
+      padding: 15px;
+      text-decoration: none;
+      color: black;
+      border-left: 1px solid #8d8d8d; }
+      nav ul li a {
+        text-decoration: none; }
 
 footer {
   background-color: steelblue; }
