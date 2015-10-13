@@ -1,34 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Big Sky Weekend</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
   </head>
 
   <body>
     <nav>
       <ul>
-        <a href="index.html"><li>Home</li></a>
-        <a href="#"><li>Event</li></a>
-        <a href="#"><li>FAQ</li></a>
-        <a href="#"><li>Contact</li></a>
-        <a href="#"><li>Register</li></a>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Event</a>
+          <ul id="subnav">
+            <li class="items"><a href="#">Schedule</a></li>
+            <li class="items"><a href="#">Instructors</a></li>
+            <li class="items"><a href="#">Music & Venues</a></li>
+          </ul>
+        </li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Register</a></li>
       </ul>
     </nav>
-    
+
+    <div id="carousel">
+      <img src="img/#"> <!-- replace slider image with jQuery -->
+    </div>
+
     <footer>
-      <div class="row">
-        <ul class="small-12 large-12">
-          <li><a href="#">Eastside Stomp</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
+      <!-- footer links? Social media buttons? -->
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="js/controllers.js"></script>
   </body>
 
 </html>

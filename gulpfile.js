@@ -30,7 +30,7 @@ gulp.task('compileSass', function() {
 });
 
 gulp.task('watch', function() {
-	gulp.watch('public/scss/*.scss', ['compileSass']);
+	gulp.watch('public/scss/02-components/*.scss', ['compileSass']);
 	gulp.watch('public/js/app.js', ['concatJS']);
 });
 

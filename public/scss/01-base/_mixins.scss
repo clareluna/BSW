@@ -1,0 +1,10 @@
+// Media Queries
+
+@mixin breakpoint($point) {
+  @if $point == 1400 {
+    @media (max-width: 1400px) { @content; }
+  }
+  @else if $point == 715 {
+    @media (max-width: 715px) { @content; }
+  }
+}
