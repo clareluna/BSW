@@ -1,6 +1,6 @@
 /* MOVE TO _mixin.scss */
 nav {
-  background-color: steelblue;
+  background-color: white;
   padding-top: 0;
   overflow: hidden; }
   nav ul {
@@ -11,13 +11,13 @@ nav {
       display: block;
       text-decoration: none;
       color: black;
-      border-left: 1px solid #8d8d8d; }
+      border-right: 1px solid #8d8d8d; }
       @media (min-width: 715px) {
         nav ul li {
           display: inline-block;
           float: left; } }
       nav ul li a {
-        padding: 15px 10px;
+        padding: 12px 20px;
         display: block;
         text-decoration: none;
         text-align: center;
@@ -27,15 +27,33 @@ nav {
           color: black;
           transition: all 0.3s ease; }
 
+#logo {
+  background-color: #4C4C4C;
+  list-style-type: none;
+  display: block;
+  text-decoration: none;
+  color: white;
+  border-right: 1px solid #8d8d8d; }
+  @media (min-width: 715px) {
+    #logo {
+      display: inline-block;
+      float: left; } }
+  #logo a {
+    padding: 12px 20px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white; }
+
 #subnav li.items {
   overflow: hidden;
   display: none; }
 
 /* MOVE TO _carousel.scss */
-#carousel {
+#carousel img {
   background-position: center;
   background-repeat: none;
-  max-height: 350px;
+  background-size: cover;
   width: 100%; }
 
 footer {

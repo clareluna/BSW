@@ -1,31 +1,34 @@
 $link-color: black;
-$link-vertical-padding:10px;    // Controls Menu top & bottom padding
-$link-horizontal-padding:15px;  // Contols Menu left & right padding
-$menu-background: steelblue;        // Control Menu Color Scheme
+$link-vertical-padding: 20px;   // Controls Menu top & bottom padding
+$link-horizontal-padding: 12px; // Contols Menu left & right padding
+$pri-menu-background: white;        // Primary Menu Color Scheme
+$sec-menu-background: #4C4C4C;     // Secondary Menu Color Scheme 
 
 /* MOVE TO _mixin.scss */
 
 // MEDIA QUERIES
-
 @mixin breakpoint {
   @media (min-width: 715px) { @content; }
 }
+// MENU STYLING
+@mixin menu-links($text) {
+  list-style-type: none;
+  display: block;
+  text-decoration: none;
+  color: $text;
+  border-right: 1px solid #8d8d8d;
+}
 
 // MAIN NAV
-
 nav {
-  background-color: $menu-background;
+  background-color: $pri-menu-background;
   padding-top: 0;
   overflow: hidden;
   ul {
     margin: 0;
     padding: 0;
     li {
-      list-style-type: none;
-      display: block;
-      text-decoration: none;
-      color: black;
-      border-left: 1px solid #8d8d8d;
+      @include menu-links(black);
       @include breakpoint {
         display: inline-block;
         float: left;
@@ -46,8 +49,24 @@ nav {
   }
 }
 
-// SUBNAV
+// NAV LOGO
+#logo {
+  background-color: $sec-menu-background;
+  @include menu-links(white);
+  @include breakpoint {
+    display: inline-block;
+    float: left;
+  }
+  a {
+    padding: $link-horizontal-padding $link-vertical-padding;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+  }
+}
 
+// SUBNAV
 #subnav li.items {
   overflow: hidden;
   display: none;
@@ -56,12 +75,10 @@ nav {
 /* MOVE TO _carousel.scss */
 
 // CAROUSEL
-
-#carousel {
-  // background-image: ;
+#carousel img {
   background-position: center;
   background-repeat: none;
-  max-height: 350px;
+  background-size: cover;
   width: 100%;
 }
 
