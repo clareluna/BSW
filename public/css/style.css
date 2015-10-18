@@ -11,11 +11,11 @@ nav {
       display: block;
       text-decoration: none;
       color: black;
-      border-right: 1px solid #8d8d8d; }
+      font-family: "Roboto Slab"; }
       @media (min-width: 715px) {
         nav ul li {
           display: inline-block;
-          float: left; } }
+          float: right; } }
       nav ul li a {
         padding: 12px 20px;
         display: block;
@@ -33,7 +33,7 @@ nav {
   display: block;
   text-decoration: none;
   color: white;
-  border-right: 1px solid #8d8d8d; }
+  font-family: "Roboto Slab"; }
   @media (min-width: 715px) {
     #logo {
       display: inline-block;
@@ -54,13 +54,38 @@ nav {
   background-position: center;
   background-repeat: none;
   background-size: cover;
-  width: 100%; }
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: block; }
 
 footer {
-  background-color: steelblue; }
-
-ul li {
-  display: inline-block;
-  list-style-type: none; }
+  background-color: #4C4C4C;
+  color: white;
+  margin: 0;
+  min-height: 200px; }
+  footer .links {
+    list-style-type: none;
+    text-align: center; }
+    footer .links li {
+      margin-top: 0.5em; }
+      footer .links li a {
+        list-style-type: none;
+        display: block;
+        text-decoration: none;
+        color: white;
+        font-family: "Roboto Slab"; }
+    footer .links:first-child {
+      float: left;
+      margin: 3em 1em 0 4em; }
+      @media (min-width: 715px) {
+        footer .links:first-child {
+          margin: 3em 1em 0 14em; } }
+    footer .links:nth-child(2) {
+      float: right;
+      margin: 3em 4em 0 1em; }
+      @media (min-width: 715px) {
+        footer .links:nth-child(2) {
+          margin: 3em 14em 0 1em; } }
 
 /*# sourceMappingURL=style.css.map */

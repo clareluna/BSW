@@ -1,4 +1,5 @@
-$link-color: black;
+$pri-link-color: black;
+$sec-link-color: white;
 $link-vertical-padding: 20px;   // Controls Menu top & bottom padding
 $link-horizontal-padding: 12px; // Contols Menu left & right padding
 $pri-menu-background: white;        // Primary Menu Color Scheme
@@ -16,7 +17,12 @@ $sec-menu-background: #4C4C4C;     // Secondary Menu Color Scheme
   display: block;
   text-decoration: none;
   color: $text;
-  border-right: 1px solid #8d8d8d;
+  font-family: "Roboto Slab";
+}
+@mixin module-style {
+  background-color: $sec-menu-background;
+  color: $sec-link-color;
+  margin: 0;
 }
 
 // MAIN NAV
@@ -31,17 +37,17 @@ nav {
       @include menu-links(black);
       @include breakpoint {
         display: inline-block;
-        float: left;
+        float: right;
       }
       a {
         padding: $link-horizontal-padding $link-vertical-padding;
         display: block;
         text-decoration: none;
         text-align: center;
-        color: $link-color;
+        color: $pri-link-color;
         &:hover {
           background: darken(#F3F3F3,10%);
-          color: $link-color;
+          color: $pri-link-color;
           transition: all 0.3s ease;
         }
       }
@@ -75,12 +81,48 @@ nav {
 /* MOVE TO _carousel.scss */
 
 // CAROUSEL
-#carousel img {
-  background-position: center;
-  background-repeat: none;
-  background-size: cover;
-  width: 100%;
+#carousel {
+  img {
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
 }
+
+// FOOTER
+footer {
+  @include module-style;
+  min-height: 200px;
+  .links {
+    list-style-type: none;
+    text-align: center;
+    li { 
+      margin-top: 0.5em;
+      a {
+        @include menu-links(white);
+      }
+    }
+    &:first-child {
+      float: left;
+      margin: 3em 1em 0 4em;
+      @include breakpoint {
+        margin: 3em 1em 0 14em;
+      }
+    }
+    &:nth-child(2) {
+      float: right;
+      margin: 3em 4em 0 1em;
+      @include breakpoint {
+        margin: 3em 14em 0 1em;
+      }
+    }
+  }
+}
+
 
 
 
