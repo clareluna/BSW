@@ -1,9 +1,11 @@
-$pri-link-color: black;
-$sec-link-color: white;
-$link-vertical-padding: 20px;   // Controls Menu top & bottom padding
-$link-horizontal-padding: 12px; // Contols Menu left & right padding
-$pri-menu-background: white;        // Primary Menu Color Scheme
-$sec-menu-background: #4C4C4C;     // Secondary Menu Color Scheme 
+$pri-link-color:          black;
+$sec-link-color:          white;
+$link-vertical-padding:   20px;    // Controls Menu top & bottom padding
+$link-horizontal-padding: 12px;    // Contols Menu left & right padding
+$pri-menu-background:     white;   // Primary Menu Color Scheme
+$sec-menu-background:     #4C4C4C; // Secondary Menu Color Scheme 
+$paragraph-text:          "Open Sans", "HelveticaNue", sans-serif;
+$header-text:             "Roboto Slab";
 
 /* MOVE TO _mixin.scss */
 
@@ -17,7 +19,7 @@ $sec-menu-background: #4C4C4C;     // Secondary Menu Color Scheme
   display: block;
   text-decoration: none;
   color: $text;
-  font-family: "Roboto Slab";
+  font-family: $header-text;
 }
 @mixin module-style {
   background-color: $sec-menu-background;
@@ -110,16 +112,27 @@ footer {
       float: left;
       margin: 3em 1em 0 4em;
       @include breakpoint {
-        margin: 3em 1em 0 14em;
+        display: inline-block;
+        margin: 3em 1em 0 16em;
       }
     }
     &:nth-child(2) {
       float: right;
       margin: 3em 4em 0 1em;
       @include breakpoint {
-        margin: 3em 14em 0 1em;
+        display: inline-block;
+        margin: 3em 16em 0 1em;
       }
     }
+  }
+}
+
+// MAIN CONTENT
+.content {
+  text-align: center;
+  font-family: sans-serif;
+  p {
+
   }
 }
 
