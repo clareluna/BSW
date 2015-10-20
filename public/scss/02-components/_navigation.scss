@@ -88,6 +88,7 @@ nav {
     background-position: center;
     background-repeat: none;
     background-size: cover;
+    background-color: $sec-menu-background;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -135,6 +136,7 @@ footer {
 
 .slideshow {
   display: none;
+  position: absolute;
 }
 
 
