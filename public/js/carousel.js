@@ -1,17 +1,22 @@
+// $(function() {
+//   function changeSlide(el) {
+//     $(el).fadeIn(2500, function() {
+//       $(this).fadeOut(2500, function() {
+//         changeSlide(this.nextElementSibling || this.parentElement.firstElementChild)
+//       });
+//     });
+//   }
+//   changeSlide($(".slideshow:first"));
+// });
+
+
 $(function() {
-
-	var slides = ['img/slide1.jpg', 'img/slide2.jpg', 'img/slide3.jpg'];
-
-	function changeSlide(arr) {
-		$('#slideshow').attr('src', arr[0]);
-		var i = 1;
-		setInterval(function() {
-			$('#slideshow').attr('src', arr[i]);
-			i++;
-			if (i >= arr.length) {
-				i = 0;
-			}
-		}, 3500);
-	}
-	changeSlide(slides);
+  function changeSlide(el) {
+    $(el).fadeIn(2500, function() {
+      $(this).delay(3000).fadeOut({duration:2500, start:function() {
+				changeSlide(this.nextElementSibling || this.parentElement.firstElementChild)}
+			});
+    });
+  }
+  changeSlide($(".slideshow:first"));
 });
