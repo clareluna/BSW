@@ -1,4 +1,12 @@
 /* MOVE TO _mixin.scss */
+body {
+  background-color: black;
+  margin: 0 0 200px; }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
 nav {
   background-color: white;
   padding-top: 0;
@@ -54,17 +62,20 @@ nav {
   background-position: center;
   background-repeat: none;
   background-size: cover;
-  background-color: #4C4C4C;
   width: 100%;
   margin: 0;
-  padding: 0;
-  display: block; }
+  padding: 0; }
 
 footer {
   background-color: #4C4C4C;
   color: white;
   margin: 0;
-  min-height: 200px; }
+  min-height: 200px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 200px;
+  width: 100%; }
   footer .links {
     list-style-type: none;
     text-align: center; }
@@ -96,7 +107,7 @@ footer {
   font-family: sans-serif; }
 
 .slideshow {
-  display: none;
+  display: hidden;
   position: absolute; }
 
 /*# sourceMappingURL=style.css.map */

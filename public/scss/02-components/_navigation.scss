@@ -27,6 +27,16 @@ $header-text:             "Roboto Slab";
   margin: 0;
 }
 
+// GLOBAL
+body {
+  background-color: black;
+  margin: 0 0 200px;
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 // MAIN NAV
 nav {
   background-color: $pri-menu-background;
@@ -88,11 +98,9 @@ nav {
     background-position: center;
     background-repeat: none;
     background-size: cover;
-    background-color: $sec-menu-background;
     width: 100%;
     margin: 0;
     padding: 0;
-    display: block;
   }
 }
 
@@ -100,6 +108,11 @@ nav {
 footer {
   @include module-style;
   min-height: 200px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 200px;
+  width: 100%;
   .links {
     list-style-type: none;
     text-align: center;
@@ -135,10 +148,8 @@ footer {
 }
 
 .slideshow {
-  display: none;
+  display: hidden;
   position: absolute;
 }
-
-
 
 
