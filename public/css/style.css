@@ -1,11 +1,6 @@
 /* MOVE TO _mixin.scss */
 body {
-  background-color: black;
-  margin: 0 0 200px; }
-
-html {
-  position: relative;
-  min-height: 100%; }
+  background-color: black; }
 
 nav {
   background-color: white;
@@ -64,9 +59,11 @@ nav {
   background-size: cover;
   width: 100%;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  display: none; }
 
 footer {
+  display: none;
   overflow: hidden;
   background-color: #4C4C4C;
   color: white;
@@ -111,9 +108,5 @@ footer {
   width: 100%;
   margin-top: 6.5em;
   overflow: hidden; }
-
-.slideshow {
-  display: hidden;
-  position: absolute; }
 
 /*# sourceMappingURL=style.css.map */

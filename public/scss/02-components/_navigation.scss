@@ -30,11 +30,6 @@ $header-text:             "Roboto Slab";
 // GLOBAL
 body {
   background-color: black;
-  margin: 0 0 200px;
-}
-html {
-    position: relative;
-    min-height: 100%;
 }
 
 // MAIN NAV
@@ -101,11 +96,13 @@ nav {
     width: 100%;
     margin: 0;
     padding: 0;
+    display: none;
   }
 }
 
 // FOOTER
 footer {
+  display: none;
   overflow: hidden;
   @include module-style;
   min-height: 200px;
@@ -153,11 +150,4 @@ footer {
   overflow: hidden;
 }
 
-.slideshow {
-  display: hidden;
-  position: absolute;
-}
-
-
-
-
+// Positioning Branch
