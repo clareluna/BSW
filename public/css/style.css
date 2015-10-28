@@ -52,13 +52,16 @@ nav {
   display: none; }
 
 /* MOVE TO _carousel.scss */
-#carousel img {
-  background-position: center;
-  background-repeat: none;
-  background-size: cover;
-  width: 100%;
-  margin: 0;
-  padding: 0; }
+#carousel {
+  display: block; }
+  #carousel img {
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0; }
 
 footer {
   background-color: #4C4C4C;
@@ -100,8 +103,9 @@ footer {
   display: block;
   text-decoration: none;
   color: black;
-  font-family: "Roboto Slab"; }
+  font-family: "Roboto Slab";
+  text-align: center; }
   .content h2 {
-    margin: 0; }
+    margin: 2em 0 1.5em; }
 
 /*# sourceMappingURL=style.css.map */
