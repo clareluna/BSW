@@ -1,20 +1,8 @@
-// establish a core color
-$core-blue: #005EFF;
-
-// assign core color to semantic variable
-$btn-color: $core-blue;
-
-// use semantic variable as assigned to additional semantics
-$btn: (
-	$btn-background: lighten($btn-color, 20%);
-	$btn-border:     darken($btn-color, 30%);
-	$btn-dropshadow: darken($btn-color, 50%);
-);
-
-// put to use in css selector
-.btn {
-	background-color: map-get($btn, btn-background);
-	border:           map-get($btn, btn-border);
-	box-shadow:       map-get($btn, btn-dropshadow);
-}
-
+$pri-link-color:          black;
+$sec-link-color:          white;
+$link-vertical-padding:   20px;    // Controls Menu top & bottom padding
+$link-horizontal-padding: 12px;    // Contols Menu left & right padding
+$pri-menu-background:     white;   // Primary Menu Color Scheme
+$sec-menu-background:     #4C4C4C; // Secondary Menu Color Scheme 
+$paragraph-text:          "Open Sans", "HelveticaNue", sans-serif;
+$header-text:             "Roboto Slab";

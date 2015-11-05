@@ -1,10 +1,17 @@
-// Media Queries
-
-@mixin breakpoint($point) {
-  @if $point == 1400 {
-    @media (max-width: 1400px) { @content; }
-  }
-  @else if $point == 715 {
-    @media (max-width: 715px) { @content; }
-  }
+// MEDIA QUERIES
+@mixin breakpoint {
+  @media (min-width: 715px) { @content; }
+}
+// MENU STYLING
+@mixin menu-links($text) {
+  list-style-type: none;
+  display: block;
+  text-decoration: none;
+  color: $text;
+  font-family: $header-text;
+}
+@mixin module-style($sec-menu-background) {
+  background-color: $sec-menu-background;
+  color: $sec-link-color;
+  margin: 0;
 }

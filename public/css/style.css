@@ -1,11 +1,5 @@
-/* MOVE TO _mixin.scss */
 body {
-  background-color: black;
-  margin: 0 0 200px; }
-
-html {
-  position: relative;
-  min-height: 100%; }
+  background-color: black; }
 
 nav {
   background-color: white;
@@ -58,23 +52,22 @@ nav {
   display: none; }
 
 /* MOVE TO _carousel.scss */
-#carousel img {
-  background-position: center;
-  background-repeat: none;
-  background-size: cover;
-  width: 100%;
-  margin: 0;
-  padding: 0; }
+#carousel {
+  display: block; }
+  #carousel img {
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0; }
 
 footer {
   background-color: #4C4C4C;
   color: white;
   margin: 0;
   min-height: 200px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 200px;
   width: 100%; }
   footer .links {
     list-style-type: none;
@@ -103,11 +96,16 @@ footer {
           margin: 3em 16em 0 1em; } }
 
 .content {
-  text-align: center;
-  font-family: sans-serif; }
-
-.slideshow {
-  display: hidden;
-  position: absolute; }
+  background-color: white;
+  color: white;
+  margin: 0;
+  list-style-type: none;
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto Slab";
+  text-align: center; }
+  .content h2 {
+    margin: 2em 0 1.5em; }
 
 /*# sourceMappingURL=style.css.map */
