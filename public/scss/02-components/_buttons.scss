@@ -1,0 +1,22 @@
+button {
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: #D04C4C;
+  color: white;
+  border: 0;
+  padding: 10px 15px;
+  text-shadow: 0 -1px 0 #000;
+  box-shadow: 0 1px 0 #682626, 0 5px 0 #913535, 0 6px 6px rgba(0,0,0,0.6);
+  margin: 1em 0 3em 0;
+  &:focus {
+    outline: 0;
+  }
+  &:active {
+    box-shadow: 0 1px 0 #666, 0 2px 0 #444, 0 2px 2px rgba(0,0,0,0.9);
+    -webkit-transform: translateY(3px);
+  }
+  a {
+    text-decoration: none;
+    color: white;  
+  }
+}
