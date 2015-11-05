@@ -11,6 +11,10 @@ nav {
   ul {
     margin: 0;  
     padding: 0;
+    display: none;
+    @include breakpoint {
+      display: block;
+    }
     li {
       @include menu-links(black);
       @include breakpoint {
@@ -109,6 +113,7 @@ footer {
 .content {
   @include module-style($sec-link-color);
   @include menu-links($pri-link-color);
+  height: 16em;
   text-align: center;
   h2 {
     margin: 2em 0 1.5em;
